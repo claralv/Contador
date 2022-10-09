@@ -30,5 +30,11 @@ class MainActivity : AppCompatActivity() {
             textViewContador.setText(contador.toString())
         }
 
+        val btmenos=findViewById<Button>(R.id.button)
+        btmenos.setOnClickListener{
+            contador--
+            textViewContador.setText(contador.toString())
+        }
+
     }
 }
